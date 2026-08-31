@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poorab Gupta — GenAI &amp; Agentic AI Engineer</title>
+<meta name="description" content="Poorab Gupta — Agentic AI &amp; Generative AI developer building deployable LangGraph agents, RAG pipelines, and voice-first assistants.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">PG<span>_</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-links" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-noise"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-eyebrow"><span class="pulse-dot"></span> OPEN TO GENAI / AGENTIC AI ENGINEER ROLES</div>
+      <h1>Poorab Gupta</h1>
+      <div class="tagline">AGENTIC AI ENGINEER</div>
+      <p class="sub">I build multi-step LLM systems that actually ship — LangGraph agents, RAG pipelines, and voice-first assistants — with a backend and security foundation underneath. BCA graduate, JIIT Noida.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="assets/Poorab_Gupta_CV.pdf" class="btn btn-ghost" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-section">
+    <div class="marquee-track" id="marquee">
+      <span>LANGGRAPH</span><span class="dot">·</span>
+      <span>LANGCHAIN</span><span class="dot">·</span>
+      <span>RAG PIPELINES</span><span class="dot">·</span>
+      <span>GEMINI API</span><span class="dot">·</span>
+      <span>PINECONE</span><span class="dot">·</span>
+      <span>FASTAPI</span><span class="dot">·</span>
+      <span>DOCKER</span><span class="dot">·</span>
+      <span>VULNERABILITY ASSESSMENT</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-index">About</span>
+        <h2 class="section-title">Who's Building</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a BCA graduate from <strong>JIIT Noida</strong>, specializing in Generative AI and agentic systems. My work centers on multi-step LLM applications — tool-calling agents, retrieval pipelines, orchestration logic — built on <strong>LangChain</strong>, <strong>LangGraph</strong>, and <strong>RAG</strong>, with a solid backend layer of FastAPI, Docker, and AWS underneath.</p>
+          <p>Before AI, I spent time in <strong>network security and vulnerability assessment</strong> — an internship at Wayspire, an offline bootcamp at CDAC Noida, hands-on labs across Hack The Box and PortSwigger. That background shows up in how I build: security-conscious by default, not bolted on after. I ship projects end-to-end, from architecture through deployment, and co-founded my college's coding club, <strong>Zen-Coders</strong>, mentoring 50+ peers along the way.</p>
+        </div>
+        <div class="about-panel reveal">
+          <span class="mono-tag">Quick Facts</span>
+          <div class="fact-row"><span class="k">Education</span><span class="v">BCA, JIIT Noida — 8.12 CGPA</span></div>
+          <div class="fact-row"><span class="k">Focus</span><span class="v">Agentic &amp; Generative AI</span></div>
+          <div class="fact-row"><span class="k">Background</span><span class="v">Network Security &amp; VAPT</span></div>
+          <div class="fact-row"><span class="k">Leadership</span><span class="v">Co-founder, Zen-Coders</span></div>
+          <div class="fact-row"><span class="k">Mentored</span><span class="v">50+ peers</span></div>
+          <div class="fact-row"><span class="k">Location</span><span class="v">Noida, Uttar Pradesh, IN</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-index">Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="project-row reveal">
+        <div class="project-num">Aria</div>
+        <div class="project-meta">
+          <span class="mono-tag">Voice Assistant · Agentic AI</span>
+          <h3 class="project-title">Aria — Personal Voice Assistant</h3>
+          <p class="project-desc">A Jarvis-style Windows voice assistant powered by a LangGraph ReAct agent on Gemini 2.0 Flash, orchestrating 15+ tools across OS control, media, and third-party APIs. Runs a fully offline speech pipeline — faster-whisper for STT, pyttsx3 for TTS, custom energy-based VAD and wake-word detection — eliminating per-request API costs. Dynamic app-discovery via Windows Registry and Start Menu scanning, a thread-safe 3-mode operating system (Normal / Mute / DND), and a custom PyQt6 status overlay for real-time agent state.</p>
+          <div class="project-stack">
+            <span class="stack-chip">LangGraph</span>
+            <span class="stack-chip">Gemini 2.0 Flash</span>
+            <span class="stack-chip">faster-whisper</span>
+            <span class="stack-chip">PyQt6</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-row reveal">
+        <div class="project-num">RAG</div>
+        <div class="project-meta">
+          <span class="mono-tag">Chrome Extension · RAG</span>
+          <h3 class="project-title">YouTube RAG Chatbot</h3>
+          <p class="project-desc">A Manifest V3 Chrome Extension that answers questions from any YouTube video's transcript using Retrieval-Augmented Generation. FastAPI backend pulls transcripts via the YouTube Transcript API, LangChain handles orchestration, Gemini embeddings feed into Pinecone for vector storage and retrieval.</p>
+          <div class="project-stack">
+            <span class="stack-chip">FastAPI</span>
+            <span class="stack-chip">LangChain</span>
+            <span class="stack-chip">Gemini Embeddings</span>
+            <span class="stack-chip">Pinecone</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-row reveal">
+        <div class="project-num">CVE</div>
+        <div class="project-meta">
+          <span class="mono-tag">Security Tooling · NLP</span>
+          <h3 class="project-title">Cyber.AI — NLP-Based Vulnerability Analysis</h3>
+          <p class="project-desc">A Python NLP tool that retrieves and summarizes CVE vulnerability data for faster triage, integrating the NVD and Vulners APIs for real-time retrieval and classification. Where my security background and AI work meet directly.</p>
+          <div class="project-stack">
+            <span class="stack-chip">NVD API</span>
+            <span class="stack-chip">Vulners API</span>
+            <span class="stack-chip">NLP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-row reveal">
+        <div class="project-num">API</div>
+        <div class="project-meta">
+          <span class="mono-tag">Backend · Infra</span>
+          <h3 class="project-title">Taskflow</h3>
+          <p class="project-desc">A Flask To-Do REST API, Dockerized with an Nginx reverse proxy and deployed on AWS EC2 — evolved from a semester project into a fully containerized deployment.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Flask</span>
+            <span class="stack-chip">Docker</span>
+            <span class="stack-chip">Nginx</span>
+            <span class="stack-chip">AWS EC2</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-index">Toolkit</span>
+        <h2 class="section-title">Skills &amp; Stack</h2>
+      </div>
+
+      <div class="skills-cat reveal">
+        <span class="skills-cat-label">GenAI &amp; Agentic AI</span>
+        <div class="pill-row">
+          <span class="pill">LangGraph</span>
+          <span class="pill">LangChain</span>
+          <span class="pill">RAG Pipelines</span>
+          <span class="pill">Vector Embeddings</span>
+          <span class="pill">Prompt Engineering</span>
+          <span class="pill">Tool-Calling</span>
+          <span class="pill">Gemini API</span>
+        </div>
+      </div>
+
+      <div class="skills-cat reveal">
+        <span class="skills-cat-label">Vector Databases</span>
+        <div class="pill-row">
+          <span class="pill">Pinecone</span>
+          <span class="pill">Chroma</span>
+          <span class="pill">FAISS</span>
+        </div>
+      </div>
+
+      <div class="skills-cat reveal">
+        <span class="skills-cat-label">Backend &amp; Cloud</span>
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">Flask</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Docker</span>
+          <span class="pill">AWS EC2</span>
+          <span class="pill">Nginx</span>
+          <span class="pill">Git</span>
+        </div>
+      </div>
+
+      <div class="skills-cat reveal">
+        <span class="skills-cat-label">Cybersecurity</span>
+        <div class="pill-row">
+          <span class="pill">Network Protocols</span>
+          <span class="pill">Vulnerability Assessment</span>
+          <span class="pill">Cryptography</span>
+          <span class="pill">Nmap</span>
+          <span class="pill">Burp Suite</span>
+          <span class="pill">Metasploit</span>
+          <span class="pill">Wireshark</span>
+        </div>
+      </div>
+
+      <div class="skills-cat reveal">
+        <span class="skills-cat-label">Languages &amp; Platforms</span>
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">C</span>
+          <span class="pill">C++</span>
+          <span class="pill">Java</span>
+          <span class="pill">Linux (Kali)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="leadership">
+    <div class="wrap reveal">
+      <h3>Building community around AI, not just code</h3>
+      <p>Co-founder of Zen-Coders, JIIT's coding club — running sessions and mentoring 50+ peers and juniors in core programming and practical AI development. Also a Game Development Competition winner and UP State Scholarship recipient.</p>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact reveal">
+        <span class="section-index" style="display:block; margin-bottom:24px;">Contact</span>
+        <h2 class="contact-title">Let's build something.</h2>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-block">
+          <span class="mono-tag">Reach Out</span>
+          <a href="mailto:poorabgupta.work@gmail.com">poorabgupta.work@gmail.com</a>
+          <a href="tel:+918445528948">+91 90272 55477</a>
+          <span class="static">Noida, Uttar Pradesh, IN</span>
+        </div>
+        <div class="contact-block">
+          <span class="mono-tag">Elsewhere</span>
+          <a href="https://github.com/Poorabb" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://linkedin.com/in/poorab-gupta-811b94237" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; width:100%;">
+      <span>© 2026 POORAB GUPTA</span>
+      <span>BUILT WITH INTENT</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
