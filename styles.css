@@ -20,7 +20,7 @@ html{scroll-behavior:smooth;}
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto;}
   *, *::before, *::after{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
-  .hero-bg, .hero-bg::before, .hero-bg::after, .hero-grid{animation:none !important; transform:none !important;}
+  .hero-bg, .hero-bg::before, .hero-bg::after, .hero-grid{animation:none !important; transform:none !important; translate:none !important;}
 }
 
 body{
@@ -130,6 +130,8 @@ nav{
 
 /* ---------- HERO ---------- */
 .hero{
+  --hero-mx:0px;
+  --hero-my:0px;
   position:relative;
   min-height:100dvh;
   display:flex; align-items:flex-end;
@@ -146,6 +148,8 @@ nav{
     linear-gradient(165deg, #0a0503 0%, #0a0503 16%, #1a0a06 28%, var(--ember) 58%, var(--ember-bright) 100%);
   background-blend-mode:normal;
   filter:blur(0.5px);
+  translate:calc(var(--hero-mx) * 0.5) calc(var(--hero-my) * 0.5);
+  will-change:translate, transform;
 }
 /* Animated gradient orbs — warm ember/amber only, keep taste (no purple aurora) */
 .hero-bg::before,
@@ -161,6 +165,8 @@ nav{
   animation: heroOrb1 7.2s ease-in-out infinite alternate;
   opacity:1;
   filter:blur(22px);
+  translate:calc(var(--hero-mx) * 0.9) calc(var(--hero-my) * 0.9);
+  will-change:translate, transform;
 }
 .hero-bg::after{
   background:
@@ -169,6 +175,8 @@ nav{
   animation: heroOrb2 7.5s ease-in-out infinite alternate;
   opacity:1;
   filter:blur(20px);
+  translate:calc(var(--hero-mx) * 1.1) calc(var(--hero-my) * 1.1);
+  will-change:translate, transform;
 }
 @keyframes heroOrb1{
   0%{ transform:translate3d(0, 0, 0) scale(1) rotate(0deg); }
@@ -198,7 +206,8 @@ nav{
   background-size:56px 56px;
   mask-image:radial-gradient(120% 100% at 20% 20%, black 30%, transparent 75%);
   animation: gridDrift 12s ease-in-out infinite alternate;
-  will-change:transform;
+  will-change:transform, translate;
+  translate:calc(var(--hero-mx) * 0.35) calc(var(--hero-my) * 0.35);
 }
 @keyframes gridDrift{
   from{ transform:translate3d(0,0,0); }
@@ -477,6 +486,36 @@ section .wrap{ position:relative; z-index:1; }
   color:var(--muted-dim);
   border:1px solid var(--border);
   padding:6px 12px;
+}
+.project-links{
+  display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;
+}
+.project-link{
+  font-family:'JetBrains Mono', monospace;
+  font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
+  color:var(--white);
+  border:1px solid var(--border-strong);
+  padding:8px 14px;
+  border-radius:var(--radius-pill);
+  display:inline-flex; align-items:center; gap:6px;
+  transition:background 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.15s ease;
+}
+.project-link:hover{
+  background:var(--white); color:var(--black); border-color:var(--white);
+  transform:translateY(-1px);
+}
+.project-link:active{transform:translateY(0) scale(0.97);}
+.project-link--private{
+  color:var(--muted-dim); border-style:dashed; cursor:default;
+}
+.project-link--private:hover{
+  background:transparent; color:var(--muted-dim); border-color:var(--border-strong); transform:none;
+}
+.project-link--demo{
+  border-color:rgba(255,179,71,0.38); color:var(--amber);
+}
+.project-link--demo:hover{
+  background:var(--amber); color:var(--black); border-color:var(--amber);
 }
 
 /* ---------- LEADERSHIP STRIP ---------- */
